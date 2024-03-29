@@ -1,0 +1,9 @@
+﻿  ListaPiezas.cpp
+D:\GitHub\TrabajoInfo\Chess\src\ListaPiezas.cpp(385,7): warning C4101: 'letra': variable local sin referencia
+LINK : warning LNK4075: se omite '/INCREMENTAL' debido a la especificación '/LTCG'
+  Generando código
+  1 of 344 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Pang.vcxproj -> D:\GitHub\TrabajoInfo\Chess\bin\Chess.exe
