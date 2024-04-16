@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+ERROR: Index 8 out of bound 7 downto 0
+Time: 25 ns  Iteration: 1  Process: /PISO_tb/uut/proc
+  File: C:/SED_LAB/test_examen/test_examen.srcs/sources_1/new/C2_14_15.vhd
+
+HDL Line: C:/SED_LAB/test_examen/test_examen.srcs/sources_1/new/C2_14_15.vhd:36
+ERROR: Index 8 out of bound 7 downto 0
+Time: 25 ns  Iteration: 1  Process: /PISO_tb/uut/proc
+  File: C:/SED_LAB/test_examen/test_examen.srcs/sources_1/new/C2_14_15.vhd
+
+HDL Line: C:/SED_LAB/test_examen/test_examen.srcs/sources_1/new/C2_14_15.vhd:36

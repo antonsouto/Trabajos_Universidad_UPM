@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Jan 26 11:53:05 2022
+# Process ID: 4576
+# Current directory: C:/SED_LAB/MAQUINAEXPENDEDORA/MAQUINAEXPENDEDORA.runs/synth_1
+# Command line: vivado.exe -log DISPENSADORA_REFRESCOS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DISPENSADORA_REFRESCOS.tcl
+# Log file: C:/SED_LAB/MAQUINAEXPENDEDORA/MAQUINAEXPENDEDORA.runs/synth_1/DISPENSADORA_REFRESCOS.vds
+# Journal file: C:/SED_LAB/MAQUINAEXPENDEDORA/MAQUINAEXPENDEDORA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DISPENSADORA_REFRESCOS.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 20 13:46:59 2021
+# Process ID: 16912
+# Current directory: C:/SED_LAB/mux2bit/mux2bit.runs/synth_1
+# Command line: vivado.exe -log mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux.tcl
+# Log file: C:/SED_LAB/mux2bit/mux2bit.runs/synth_1/mux.vds
+# Journal file: C:/SED_LAB/mux2bit/mux2bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux.tcl -notrace

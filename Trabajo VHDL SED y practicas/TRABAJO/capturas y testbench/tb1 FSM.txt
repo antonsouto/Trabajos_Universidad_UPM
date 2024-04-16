@@ -1,0 +1,104 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity FSM_monedas_tb is
+--  Port ( );
+end FSM_monedas_tb;
+
+architecture Behavioral of FSM_monedas_tb is
+
+    component FSM_monedas
+        generic (
+            CLK_FREQ : positive := 100_000_000;  -- Nexys4 100MHz 
+            T_FAIL   : time := 5 sec
+        );
+        port(
+           PUSHBUTTON       : in STD_LOGIC_VECTOR (3 downto 0);
+           RESET_MONEDA     : in STD_LOGIC;
+           CLK              : in STD_LOGIC;
+           RESTART          : in STD_LOGIC;
+           COINS_OK_100C    : out STD_LOGIC;
+           STATE            : out STD_LOGIC_VECTOR (3 downto 0);
+           LIGHT            : out STD_LOGIC_VECTOR (1 downto 0)
+         );
+      end component;
+      
+      constant CLK_PERIOD : time := 1 sec;
+      signal RESET_N, clk_1Hz, terminado_ok, coins_ok_100c: std_logic;
+      signal edge_out_coins, STATES : STD_LOGIC_VECTOR (3 downto 0);
+      signal LIGHT_coins : STD_LOGIC_VECTOR (1 downto 0);
+
+begin
+
+    dut: FSM_monedas
+            port map(
+                RESET_MONEDA => RESET_N,
+                CLK          => clk_1Hz,
+                PUSHBUTTON   => edge_out_coins,
+                restart      => terminado_ok,
+                LIGHT        => LIGHT_coins,
+                STATE        => STATES,
+                COINS_OK_100C => coins_ok_100c
+            );
+
+    clk_process : process
+    begin
+        clk_1Hz <= '1';
+        wait for CLK_PERIOD/2;
+        clk_1Hz <= '0';
+        wait for CLK_PERIOD/2;
+    end process;
+    
+    fsm_stimuli : process
+    begin
+       RESET_N <= '0';
+       edge_out_coins <= (others => '0');
+       terminado_ok <= '0';
+       wait for 5*CLK_PERIOD;
+       
+       RESET_N <= '1';
+       wait for 2*CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for CLK_PERIOD;
+       
+       edge_out_coins <= "0001";
+       wait for 2*CLK_PERIOD;
+       terminado_ok <= '1';
+       wait for 2*CLK_PERIOD;
+       
+       assert false
+       report "Fin de la simulacion..."
+       severity failure;
+    end process;
+
+end Behavioral;

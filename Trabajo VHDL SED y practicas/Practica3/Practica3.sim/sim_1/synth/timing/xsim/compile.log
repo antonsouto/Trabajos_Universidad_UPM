@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SED_LAB/Practica3/Practica3.sim/sim_1/synth/timing/xsim/FSM_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EDGEDTCTR
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-311] analyzing module synchrnzr
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SED_LAB/Practica3/Practica3.srcs/sim_1/new/FSM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_tb'

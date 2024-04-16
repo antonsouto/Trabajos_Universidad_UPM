@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov 21 19:19:49 2021
+# Process ID: 9980
+# Current directory: C:/SED_LAB/Practica3/Practica3.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/SED_LAB/Practica3/Practica3.sim/sim_1/behav/xsim/xsim.dir/FSM_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/SED_LAB/Practica3/Practica3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/SED_LAB/Practica3/Practica3.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/SED_LAB/Practica3/Practica3.sim/sim_1/behav/xsim/xsim.dir/FSM_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 86.387 ; gain = 4.734
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 19:20:00 2021...

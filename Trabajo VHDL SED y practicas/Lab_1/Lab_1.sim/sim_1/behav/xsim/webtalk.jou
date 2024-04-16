@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 20 13:27:11 2021
+# Process ID: 18252
+# Current directory: C:/SED_LAB/Lab_1/Lab_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/SED_LAB/Lab_1/Lab_1.sim/sim_1/behav/xsim/xsim.dir/leds_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/SED_LAB/Lab_1/Lab_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/SED_LAB/Lab_1/Lab_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/SED_LAB/Lab_1/Lab_1.sim/sim_1/behav/xsim/xsim.dir/leds_tb_behav/webtalk/xsim_webtalk.tcl -notrace

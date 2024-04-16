@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"FSM_tb_func_synth.vhd" \
+"../../../../../Practica3.srcs/sim_1/new/FSM_tb.vhd" \
+
+# Do not sort compile order
+nosort

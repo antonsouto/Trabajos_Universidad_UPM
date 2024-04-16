@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulacin finalizada. Test superado.
+Time: 320 ns  Iteration: 0  Process: /decoder_tb/tb  File: C:/SED_LAB/Bin_to_BCD_decoder/Bin_to_BCD_decoder.srcs/sim_1/new/decoder_tb.vhd
+$finish called at time : 320 ns : File "C:/SED_LAB/Bin_to_BCD_decoder/Bin_to_BCD_decoder.srcs/sim_1/new/decoder_tb.vhd" Line 93

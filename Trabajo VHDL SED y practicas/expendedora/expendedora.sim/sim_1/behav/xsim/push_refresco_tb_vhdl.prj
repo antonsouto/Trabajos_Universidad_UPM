@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../expendedora.srcs/sources_1/imports/new/prescaler.vhd" \
+"../../../../expendedora.srcs/sources_1/imports/new/push_refresco.vhd" \
+"../../../../expendedora.srcs/sim_1/imports/new/push_refresco_tb.vhd" \
+
+# Do not sort compile order
+nosort
