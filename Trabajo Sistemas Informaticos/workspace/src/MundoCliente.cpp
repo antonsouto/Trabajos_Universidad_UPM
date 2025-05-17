@@ -167,6 +167,7 @@ void CMundo::OnTimer(int value)
 
 void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 {
+	printf("Tecla pulsada: %c\n", key);
 	char tecla[5]="0";
 	switch(key)
 	{

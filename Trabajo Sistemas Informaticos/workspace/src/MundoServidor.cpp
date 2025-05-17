@@ -198,6 +198,7 @@ void CMundo::RecibeComandosJugador()
             unsigned char tecla;
             comunicacion.Receive(cad,sizeof(cad));
             sscanf(cad,"%c",&tecla);
+			printf("Recibida tecla: %c\n", tecla); //DEBUGGING
             if(tecla=='s')jugador1.velocidad.y=-4;
             if(tecla=='w')jugador1.velocidad.y=4;
             if(tecla=='l')jugador2.velocidad.y=-4;
@@ -254,10 +255,6 @@ void CMundo::Init()
 	jugador2.x1=6;jugador2.y1=-1;
 	jugador2.x2=6;jugador2.y2=1;
 	
-	//Crear thread
-	pthread_attr_init(&atrib);
-	pthread_attr_setdetachstate(&atrib, PTHREAD_CREATE_JOINABLE);
-	pthread_create(&thid1, &atrib, hilo_comandos, this);
 	
 	//Abrir la tubería del logger en modo escritura
 	fd_logger = open(fifo_logger, O_WRONLY);
@@ -276,8 +273,10 @@ void CMundo::Init()
 	sigaction(SIGPIPE,&accion_resto,NULL);
 	
 	//Enlace de socket conexion
-	if(conexion.InitServer(ip,puerto)==-1)
-		printf("Error al abrir el servidor");
+	if (conexion.InitServer(ip, puerto) == -1) {
+    	fprintf(stderr, "Error al abrir el servidor\n");
+    	exit(1);
+	}
 	
 	//Socket comunicacion
 	comunicacion=conexion.Accept();
@@ -288,4 +287,9 @@ void CMundo::Init()
 	char ch[70];
 	sprintf(ch,"%s se ha conectado a la partida\n",n);
 	printf("%s",ch);
+
+	//Crear thread después de recibir el cliente
+	pthread_attr_init(&atrib);
+	pthread_attr_setdetachstate(&atrib, PTHREAD_CREATE_JOINABLE);
+	pthread_create(&thid1, &atrib, hilo_comandos, this);
 }

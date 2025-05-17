@@ -34,8 +34,8 @@ public:
 	Socket();
 	virtual ~Socket();
 	
-	int Connect(char ip[],int port);
-	int InitServer(char ip[],int port);
+	int Connect(const char ip[],int port);
+	int InitServer(const char ip[],int port);
 	Socket Accept();
 	void Close();
 

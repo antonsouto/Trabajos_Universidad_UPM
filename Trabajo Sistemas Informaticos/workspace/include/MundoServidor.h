@@ -48,7 +48,7 @@ public:
 	
 	Socket conexion;
 	Socket comunicacion;
-	char* ip="10.0.2.15";
+	const char* ip = "127.0.0.1";
 	int puerto=6000;
 };
 

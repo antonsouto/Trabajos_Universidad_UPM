@@ -5,6 +5,8 @@
 #include "Socket.h"
 #include <iostream>
 #include <stdio.h>
+#include <string.h> //Necesario para memset
+
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -19,7 +21,7 @@ Socket::~Socket()
 
 }
 
-int Socket::Connect(char ip[],int port)
+int Socket::Connect(const char ip[],int port)
 {
 	struct sockaddr_in server_address;
 	server_address.sin_family = AF_INET;
@@ -41,10 +43,11 @@ int Socket::Connect(char ip[],int port)
 	}
 	return 0;
 }
-int Socket::InitServer(char ip[],int port)
+int Socket::InitServer(const char ip[],int port)
 {
 	struct sockaddr_in server_address;
-	
+	memset(&server_address, 0, sizeof(server_address));  //IMPORTANTE PARA FUNCIONAMIENTO
+
 	server_address.sin_family = AF_INET;
 	server_address.sin_addr.s_addr = inet_addr(ip);
 	server_address.sin_port = htons(port);
@@ -62,7 +65,7 @@ int Socket::InitServer(char ip[],int port)
 	int len = sizeof(server_address);
 	if (bind(sock,(struct sockaddr *) &server_address,len) < 0)
 	{
-		std::cerr<<"Server: bind"<<std::endl;
+		perror("Server: bind"); //QUIERO VER EL ERROR REAL, ERROR HANDLER
 		return -1;
 	}
 	// Damos como m�ximo 5 puertos de conexi�n.

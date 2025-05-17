@@ -1,0 +1,8 @@
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/CMakeFiles/edit_cache.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/CMakeFiles/rebuild_cache.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/cliente.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/servidor.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/logger.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/bot.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/edit_cache.dir
+/home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo Sistemas Informaticos/workspace/build/src/CMakeFiles/rebuild_cache.dir
