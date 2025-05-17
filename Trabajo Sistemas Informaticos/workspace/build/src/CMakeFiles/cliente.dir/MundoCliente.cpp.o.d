@@ -190,12 +190,16 @@ src/CMakeFiles/cliente.dir/MundoCliente.cpp.o: \
  /usr/include/linux/close_range.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/c++/13/chrono \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/limits /usr/include/c++/13/ctime \
+ /usr/include/c++/13/bits/parse_numbers.h \
  /home/soutoa/Desktop/pangDef/Trabajos_Universidad_UPM/Trabajo\ Sistemas\ Informaticos/workspace/include/glut.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /usr/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/glu.h \
+ /usr/include/KHR/khrplatform.h /usr/include/GL/glu.h \
  /usr/include/c++/13/stdlib.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/13/math.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
@@ -208,8 +212,7 @@ src/CMakeFiles/cliente.dir/MundoCliente.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
  /usr/include/c++/13/tr1/special_function_util.h \
  /usr/include/c++/13/tr1/bessel_function.tcc \
  /usr/include/c++/13/tr1/beta_function.tcc \
