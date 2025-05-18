@@ -149,7 +149,7 @@ void CMundo::OnTimer(int value)
 	}
 	
 	
-	if(direccion->tiempo1 > 5){
+	if(direccion->tiempo2 > 5){
 		switch (direccion->accion2)
 		{
 		case 1:
