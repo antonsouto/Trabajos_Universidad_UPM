@@ -1,4 +1,3 @@
-//Autor: Miguel Peñalver Saldaña
 // Plano.cpp: implementation of the Plano class.
 //
 //////////////////////////////////////////////////////////////////////
@@ -35,7 +34,7 @@ void Plano::Dibuja()
 }
 
 //Calculo de distancia de un Pared a un punto, adicionalmente
-//se modifica el valor de un vector direccion que contendr�
+//se modifica el valor de un vector direccion que contendr�
 //el vector unitario saliente que indica la direccion de la 
 //recta mas corta entre el punto y el Pared.
 float Plano::Distancia(Vector2D punto, Vector2D *direccion)

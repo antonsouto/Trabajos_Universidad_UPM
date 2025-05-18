@@ -1,4 +1,3 @@
-//Autor: Miguel Peñalver Saldaña
 #include "glut.h"
 #include "MundoCliente.h"
 

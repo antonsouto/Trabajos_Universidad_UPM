@@ -1,4 +1,3 @@
-//Autor: Miguel Peñalver Saldaña
 // Mundo.cpp: implementation of the CMundo class.
 //
 //////////////////////////////////////////////////////////////////////
@@ -127,35 +126,46 @@ void CMundo::OnTimer(int value)
 	direccion->raqueta2=jugador2;
 	
 	direccion->tiempo=direccion->tiempo+0.025f;
-	
-	switch (direccion->accion)
-	{
-	case 1:
-		OnKeyboardDown('w',1,1);
-		break;
-		
-	case 0: 
-		//jugador1.velocidad.y=0;
-		break;
-		
-	case -1:
-		OnKeyboardDown('s',1,1);
-		break;
+	direccion->tiempo1 += 0.025f;
+	direccion->tiempo2 += 0.025f;
+
+	if(direccion->tiempo1 > 5){
+		switch (direccion->accion)
+		{
+		case 1:
+			//OnKeyboardDown('w',1,1);
+			comunicacion.Send("w",sizeof("w"));
+			break;
+
+		case 0: 
+			//jugador1.velocidad.y=0;
+			break;
+
+		case -1:
+			//OnKeyboardDown('s',1,1);
+			comunicacion.Send("s",sizeof("s"));
+			break;
+		}
 	}
 	
-	switch (direccion->accion2)
-	{
-	case 1:
-		jugador2.velocidad.y=4;
-		break;
-		
-	case 0: 
-		//jugador2.velocidad.y=0;
-		break;
-		
-	case -1:
-		jugador2.velocidad.y=-4;
-		break;
+	
+	if(direccion->tiempo1 > 5){
+		switch (direccion->accion2)
+		{
+		case 1:
+			//OnKeyboardDown('w',1,1);
+			comunicacion.Send("o",sizeof("o"));
+			break;
+
+		case 0: 
+			//jugador1.velocidad.y=0;
+			break;
+
+		case -1:
+			//OnKeyboardDown('s',1,1);
+			comunicacion.Send("l",sizeof("l"));
+			break;
+		}
 	}
 	
 	char cad[200];
@@ -173,18 +183,28 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 	{
 //	case 'a':jugador1.velocidad.x=-1;break;
 //	case 'd':jugador1.velocidad.x=1;break;
-	case 's':jugador1.velocidad.y=-4;sprintf(tecla,"s");break;
-	case 'w':jugador1.velocidad.y=4;sprintf(tecla,"w");break;
+	case 's':
+		//jugador1.velocidad.y=-4;
+		direccion->tiempo1=0.0f;
+		//direccion->accion1=0;
+		sprintf(tecla,"s");
+		break;
+	case 'w':
+		//jugador1.velocidad.y=4;
+		direccion->tiempo1=0.0f;
+		//direccion->accion1=0;
+		sprintf(tecla,"w");
+		break;
 	case 'l':
-		jugador2.velocidad.y=-4;
-		direccion->tiempo=0.0f;
-		direccion->accion2=0;
+		//jugador2.velocidad.y=-4;
+		direccion->tiempo2=0.0f;
+		//direccion->accion2=0;
 		sprintf(tecla,"l");
 		break;
 	case 'o':
-		jugador2.velocidad.y=4;
-		direccion->tiempo=0.0f;
-		direccion->accion2=0;
+		//jugador2.velocidad.y=4;
+		direccion->tiempo2=0.0f;
+		//direccion->accion2=0;
 		sprintf(tecla,"o");
 		break;
 	}
